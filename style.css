@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -7,55 +7,83 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  color: #333;
-  text-align: center;
-}
-
-/* Hero */
-.hero {
-  background: #4CAF50;
+  background: #111;
   color: white;
-  padding: 100px 20px;
 }
 
-.hero h1 {
-  font-size: 36px;
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #000;
+}
+
+header h1 {
+  color: #c59d5f;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #c59d5f;
+}
+
+/* Banner */
+.banner {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1');
+  background-size: cover;
+}
+
+.banner h2 {
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
-.hero button {
-  padding: 15px 30px;
+.banner button {
+  padding: 10px 20px;
   border: none;
-  background: white;
-  color: #4CAF50;
+  background: #c59d5f;
+  color: black;
   font-weight: bold;
   cursor: pointer;
 }
 
-/* Benefícios */
-.beneficios {
-  padding: 60px 20px;
+/* Seções */
+section {
+  padding: 60px 40px;
+  text-align: center;
 }
 
-.beneficios ul {
-  list-style: none;
-}
-
-.beneficios li {
+.servicos p {
   margin: 10px 0;
 }
 
-/* Prova social */
-.prova {
-  background: #222;
-  color: white;
-  padding: 40px;
+/* Contato */
+.contato {
+  background: #000;
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 26px;
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .banner h2 {
+    font-size: 28px;
   }
 }
