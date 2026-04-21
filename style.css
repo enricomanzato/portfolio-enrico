@@ -1,23 +1,61 @@
-body {
-  font-family: Arial;
+/* Reset */
+* {
   margin: 0;
-  background: #111;
-  color: white;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
   text-align: center;
-  padding: 40px;
-  background: #000;
 }
 
-section {
-  padding: 40px;
+/* Hero */
+.hero {
+  background: #4CAF50;
+  color: white;
+  padding: 100px 20px;
 }
 
-.card {
-  background: #222;
-  padding: 20px;
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 15px 30px;
+  border: none;
+  background: white;
+  color: #4CAF50;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Benefícios */
+.beneficios {
+  padding: 60px 20px;
+}
+
+.beneficios ul {
+  list-style: none;
+}
+
+.beneficios li {
   margin: 10px 0;
-  border-radius: 10px;
+}
+
+/* Prova social */
+.prova {
+  background: #222;
+  color: white;
+  padding: 40px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 26px;
+  }
 }
